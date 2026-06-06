@@ -1,0 +1,31 @@
+{
+  "name": "littlefs",
+  "version": "2.11.3",
+  "description": "LittleFS - a little fail-safe filesystem designed for microcontrollers. Vendored from the official littlefs-project release v2.11.3 with a PlatformIO library manifest.",
+  "keywords": "filesystem, flash, littlefs, embedded, nor-flash",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/STM32-pio-libs/littlefs"
+  },
+  "authors": [
+    {
+      "name": "Anurag Kumar Singh",
+      "email": "anurag3301.0x0@gmail.com",
+      "maintainer": true,
+      "url": "https://github.com/STM32-pio-libs"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/littlefs-project/littlefs",
+  "dependencies": {},
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "srcDir": "src",
+    "includeDir": "include",
+    "flags": [
+      "-DLFS_NO_MALLOC",
+      "-DLFS_YES_TRACE=0"
+    ]
+  }
+}
