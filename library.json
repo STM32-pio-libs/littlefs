@@ -1,6 +1,6 @@
 {
   "name": "littlefs",
-  "version": "2.11.3",
+  "version": "2.11.6",
   "description": "LittleFS - a little fail-safe filesystem designed for microcontrollers. Vendored from the official littlefs-project release v2.11.3 with a PlatformIO library manifest.",
   "keywords": "filesystem, flash, littlefs, embedded, nor-flash",
   "repository": {
@@ -19,13 +19,5 @@
   "homepage": "https://github.com/littlefs-project/littlefs",
   "dependencies": {},
   "frameworks": "*",
-  "platforms": "*",
-  "build": {
-    "srcDir": "src",
-    "includeDir": "include",
-    "flags": [
-      "-DLFS_NO_MALLOC",
-      "-DLFS_YES_TRACE=0"
-    ]
-  }
+  "platforms": "*"
 }
